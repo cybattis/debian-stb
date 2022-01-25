@@ -3,7 +3,7 @@
 # essential
 sudo aptitude -y install kde-plasma-desktop plasma-nm
 sudo apt-get -y install kde-config-sddm kde-config-sddm
-sudo apt-get -y install nvidia-driver firmware-misc-nonfree mesa-utils dev-essentials python-pip
+sudo apt-get -y install nvidia-driver firmware-misc-nonfree mesa-utils dev-essentials python-pip libxext-dev libbsd
 sudo apt -y install ratbagd
 
 # install packages
@@ -39,9 +39,12 @@ curl -sS https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd
 sudo dpkg -i lsd_0.21.0_amd64.deb
 rm -f lsd_0.21.0_amd64.deb
 
-# norminette
+# 42
+#norminette
 python3 -m pip install --upgrade pip setuptools
 python3 -m pip install norminette
+# minilibx
+./minilibx.sh
 
 # qemu
 sudo aptitude -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager
