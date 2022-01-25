@@ -10,7 +10,10 @@ builddir=$(pwd)
 apt update && apt -y upgrade
 apt install -y sudo
 apt install -y util-linux
-apt install unzip neofetch xorg curl aptitude wget fonts-firacode fonts-font-awesome fonts-hack -y
+apt install -y aptitude
+apt install -y wget
+apt install -y curl
+apt install unzip neofetch xorg fonts-firacode fonts-font-awesome fonts-hack -y
 usermod -aG sudo $USER
 echo "stb47 ALL=(ALL) NOPASSWD:ALL" | (EDITOR="tee -a" visudo)
 
