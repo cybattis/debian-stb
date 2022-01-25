@@ -1,5 +1,12 @@
 #!/bin/bash
 
+sudo cp source/sources.list.d/* /etc/apt/sources.list.d/
+
+sudo mkdir -p /media/stb47/nexus
+echo "# data drive
+UUID=207585614243FC99 /media/stb47/nexus   ntfs    defaults        0       0" | sudo tee -a /etc/fstab
+mount -a
+
 # essential
 sudo aptitude -y install kde-plasma-desktop plasma-nm
 sudo apt-get -y install kde-config-sddm kde-config-sddm
@@ -21,7 +28,7 @@ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.g
     | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
 
 # === update repo === #
-sudo apt-get update
+sudo apt-get update && sudo apt upgrade
 
 sudo apt -y install codium
 sudo apt-get -y install spotify-client
@@ -65,6 +72,8 @@ ln -s /media/stb47/nexus/Projects/ .
 
 cp -fR /media/stb47/nexus/Linux-config/.* /home/stb47/
 cp -fR /media/stb47/nexus/Linux-config/* /home/stb47/
+
+cp -Rf dotfiles/nvim /home/$username/.config
 
 # closing
 sudo apt-get update && sudo apt-get upgrade
