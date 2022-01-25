@@ -1,0 +1,51 @@
+[
+	{
+		"name": "ft_printf",
+		"rootPath": "/home/cyril/Projects/42/Cursus/ft_printf",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "get_next_line",
+		"rootPath": "/home/cyril/Projects/42/Cursus/get_next_line",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "libft",
+		"rootPath": "/home/cyril/Projects/42/Cursus/libft",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "Game_of_life",
+		"rootPath": "/home/cyril/Projects/Game_of_life",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "UTest",
+		"rootPath": "/home/cyril/Projects/Libraries/UTest",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "push_swap",
+		"rootPath": "/home/cyril/Projects/42/Cursus/push_swap",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "fdf",
+		"rootPath": "/home/cyril/Projects/42/Cursus/fdf",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]
