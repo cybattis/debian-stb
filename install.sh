@@ -64,6 +64,7 @@ ln -s /media/stb47/nexus/Documents\ Administratifs Documents/
 ln -s /media/stb47/nexus/Projects/ .
 
 cp -fR /media/stb47/nexus/Linux-config/.* /home/stb47/
+cp -fR /media/stb47/nexus/Linux-config/* /home/stb47/
 
 # closing
 sudo apt-get update && sudo apt-get upgrade
